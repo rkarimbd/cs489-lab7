@@ -48,14 +48,11 @@ To run the project locally:
 
 Clone this repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/rkarimbd/cs489-lab7.git
+
 Set up your database connection string in appsettings.json.
 
 Build and run the project using Visual Studio or the .NET CLI:
 
-bash
-Copy code
 dotnet build
 dotnet run
