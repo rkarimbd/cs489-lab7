@@ -14,21 +14,21 @@ namespace DSMS.Controllers
             _addressService = addressService;
         }
 
-        [HttpGet("list")]
-        public async Task<IActionResult> GetAllAddresses()
-        {
-            try
-            {
-                var addresses = await _addressService.GetAllAddressesSortedByCityAsync();
-                return Ok(addresses);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
-            }
-        }
+        //[HttpGet("list")]
+        //public async Task<IActionResult> GetAllAddresses()
+        //{
+        //    try
+        //    {
+        //        var addresses = await _addressService.GetAllAddressesSortedByCityAsync();
+        //        return Ok(addresses);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
+        //    }
+        //}
 
-        [HttpGet("/patient/list")]
+        [HttpGet("list")]
         public async Task<IActionResult> GetAllAddressesWithPatient()
         {
             try
