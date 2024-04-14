@@ -1,8 +1,11 @@
 Patient Management API
+
 This repository contains an ASP.NET Core Web API project for managing patients and addresses. It uses Entity Framework Core (EF Core) for data access to interact with a relational database.
 
 API Endpoints
+
 List All Patients
+
 
 HTTP GET: http://localhost:8080/adsweb/api/v1/patient/list
 Displays a list of all patients, including their primary addresses, sorted in ascending order by their last name.
